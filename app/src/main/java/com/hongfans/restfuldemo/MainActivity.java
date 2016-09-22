@@ -11,7 +11,6 @@ import com.hongfans.restfuldemo.vm.MainViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
     private MainViewModel viewModel;
     private GitHubModel model;
 
@@ -19,8 +18,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // dataBinding
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        binding.setModel(viewModel = new MainViewModel());
+        final ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        viewModel = new MainViewModel();
+        binding.setModel(viewModel);
         model = new GitHubModel(viewModel);
 
         binding.button.setOnClickListener(new View.OnClickListener() {
