@@ -9,67 +9,66 @@ import com.google.gson.annotations.SerializedName;
 public class User {
 
     @Expose
-    private String login;
+    private String  login;
     @Expose
     private Integer id;
     @SerializedName("avatar_url")
     @Expose
-    private String avatarUrl;
+    private String  avatarUrl;
     @SerializedName("gravatar_id")
     @Expose
-    private String gravatarId;
+    private String  gravatarId;
     @Expose
-
-    private String url;
+    private String  url;
     @SerializedName("html_url")
     @Expose
-    private String htmlUrl;
+    private String  htmlUrl;
     @SerializedName("followers_url")
     @Expose
-    private String followersUrl;
+    private String  followersUrl;
     @SerializedName("following_url")
     @Expose
-    private String followingUrl;
+    private String  followingUrl;
     @SerializedName("gists_url")
     @Expose
-    private String gistsUrl;
+    private String  gistsUrl;
     @SerializedName("starred_url")
     @Expose
-    private String starredUrl;
+    private String  starredUrl;
     @SerializedName("subscriptions_url")
     @Expose
-    private String subscriptionsUrl;
+    private String  subscriptionsUrl;
     @SerializedName("organizations_url")
     @Expose
-    private String organizationsUrl;
+    private String  organizationsUrl;
     @SerializedName("repos_url")
     @Expose
-    private String reposUrl;
+    private String  reposUrl;
     @SerializedName("events_url")
     @Expose
-    private String eventsUrl;
+    private String  eventsUrl;
     @SerializedName("received_events_url")
     @Expose
-    private String receivedEventsUrl;
+    private String  receivedEventsUrl;
     @Expose
-    private String type;
+    private String  type;
     @SerializedName("site_admin")
     @Expose
     private Boolean siteAdmin;
     @Expose
-    private String name;
+    private String  name;
     @Expose
-    private String company;
+    private String  company;
     @Expose
-    private String blog;
+    private String  blog;
     @Expose
-    private String location;
+    private String  location;
     @Expose
-    private String email;
+    private String  email;
     @Expose
     private Boolean hireable;
     @Expose
-    private Object bio;
+    private Object  bio;
     @SerializedName("public_repos")
     @Expose
     private Integer publicRepos;
@@ -82,10 +81,10 @@ public class User {
     private Integer following;
     @SerializedName("created_at")
     @Expose
-    private String createdAt;
+    private String  createdAt;
     @SerializedName("updated_at")
     @Expose
-    private String updatedAt;
+    private String  updatedAt;
 
     /**
      * @return The login
@@ -511,10 +510,10 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "login='" + login + '\'' +
-                ", id=" + id +
-                ", avatarUrl='" + avatarUrl + '\'' +
-                ", gravatarId='" + gravatarId + '\'' +
-                '}';
+               "login='" + login + '\'' +
+               ", id=" + id +
+               ", avatarUrl='" + avatarUrl + '\'' +
+               ", gravatarId='" + gravatarId + '\'' +
+               '}';
     }
 }
